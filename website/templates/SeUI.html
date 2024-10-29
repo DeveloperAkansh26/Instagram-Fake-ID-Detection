@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="{{url_for('static', filename='SeUI.css')}}">
+		<title>Document</title>
+	</head>
+	<body>
+		<header>
+			<h1>Detector Result</h1>
+		</header>
+		<main>
+			<div class="left">
+				{%if data[3] == false%}
+				<p>
+					{{data[2]}}
+				</p>
+				{%endif%}
+			</div>
+			<div class="right">
+				<p>
+					We think that the ID is {{data[0]}}
+				</p>
+			</div>
+		</main>
+		<footer></footer>
+	</body>
+</html>
